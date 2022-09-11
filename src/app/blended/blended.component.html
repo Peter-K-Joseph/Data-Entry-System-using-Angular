@@ -1,0 +1,92 @@
+<div class="container">
+	<div class="containerHead">
+		<h2 style="color:#8B0000;font-family:'Times New Roman', Times, serif;font-size: xx-large;" class="is-size-2">
+			Blended Teaching</h2>
+		<button class="button is-small is-danger is-light" onclick="window.location.href='../'">Go Back</button>
+	</div>
+	<div class="form" [formGroup]="itemForm">
+		<div class="field">
+			<label class="label">Course</label>
+			<div class="control">
+				<div class="select w-100">
+					<select matInput formControlName="course" class="w-100">
+						<option>CS631P Internet of Things</option>
+						<option>CS455 Lorem ipsum dolor</option>
+						<option>CS455 Lorem ipsum dolor</option>
+						<option>CS455 Lorem ipsum dolor</option>
+						<option>CS455 Lorem ipsum dolor</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">Class</label>
+			<div class="control">
+				<div class="select w-100">
+					<select matInput formControlName="class" class="w-100">
+						<option>6BTCSA</option>
+						<option>6BTCSB</option>
+						<option>6BTCSC</option>
+						<option>6BTCSD</option>
+						<option>6BTCSE</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">Date</label>
+			<div class="control">
+				<input matInput formControlName="date" class="input" type="date" placeholder="Email input" value="">
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">Time</label>
+			<div class="control">
+				<div class="select w-100">
+					<select matInput formControlName="time" class="w-100">
+						<option>Period 1: 09.00 to 10.00</option>
+						<option>Period 2: 10.00 to 11.00</option>
+						<option>Period 3: 11.00 to 12.00</option>
+						<option>Period 4: 12.00 to 01.00</option>
+						<option>Period 5: 02.00 to 03.00</option>
+						<option>Period 6: 03.00 to 04.00</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">Activity</label>
+			<div class="control">
+				<div class="select w-100">
+					<select matInput formControlName="activity" class="w-100">
+						<option>Group Project</option>
+						<option>Lorem ipsum dolor</option>
+						<option>Lorem ipsum dolor</option>
+						<option>Lorem ipsum dolor</option>
+						<option>Lorem ipsum dolor</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">Mode</label>
+			<div class="control">
+				<div class="select w-100">
+					<select matInput formControlName="mode" class="w-100">
+						<option>Online</option>
+						<option>Offline</option>
+						<option>Hybrid</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="field is-grouped">
+		<div class="control">
+			<button class="button is-link" (click)="addData()">Submit</button>
+		</div>
+		<div class="control">
+			<button class="button is-link is-light" onclick="window.location.href='../'">Cancel</button>
+		</div>
+	</div>
+</div>

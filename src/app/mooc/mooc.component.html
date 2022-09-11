@@ -1,0 +1,82 @@
+<div class="container">
+	<div class="containerHead">
+		<h2 style="color:#8B0000;font-family:'Times New Roman', Times, serif;font-size: xx-large;"class="is-size-2">MOOC Session</h2>
+		<button class="button is-small is-danger is-light" onclick="window.location.href='../'">Go Back</button>
+	</div>
+	<div class="form" [formGroup]="itemForm">
+		<div class="field">
+			<label class="label">Course</label>
+			<div class="control">
+				<div class="select w-100">
+					<select matInput formControlName="course" class="w-100">
+						<option>CS631P Internet of Things</option>
+						<option>CS455 Lorem ipsum dolor</option>
+						<option>CS455 Lorem ipsum dolor</option>
+						<option>CS455 Lorem ipsum dolor</option>
+						<option>CS455 Lorem ipsum dolor</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">Class</label>
+			<div class="control">
+				<div class="select w-100">
+					<select matInput formControlName="class" class="w-100">
+						<option>6BTCSA</option>
+						<option>6BTCSB</option>
+						<option>6BTCSC</option>
+						<option>6BTCSD</option>
+						<option>6BTCSE</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">Name of the Course</label>
+			<div class="control">
+				<input class="input" matInput formControlName="name" type="topic" placeholder="Email input" value="">
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">Hyperlink</label>
+			<div class="control">
+				<input class="input" matInput formControlName="hyperlink" type="topic" placeholder="Email input" value="">
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">MOOC Platform</label>
+			<div class="control">
+				<div class="select w-100">
+					<select matInput formControlName="platform" class="w-100">
+						<option>Swayam</option>
+						<option>Lorem ipsum dolor</option>
+						<option>Lorem ipsum dolor</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="field">
+			<label class="label">Duration</label>
+			<div class="control">
+				<div class="select w-100">
+					<select matInput formControlName="duration" class="w-100">
+						<option>6 weeks</option>
+						<option>9 weeks</option>
+						<option>12 weeks</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="field is-grouped">
+		<div class="control">
+			<button  class="button is-link" (click)="addData()">Submit</button>
+		</div>
+		<div class="control">
+			<button class="button is-link is-light" onclick="window.location.href='../'">Cancel</button>
+		</div>
+	</div>
+</div>

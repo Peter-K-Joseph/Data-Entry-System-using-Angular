@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="containerHead" >
+        <h2 style="color:#8B0000;font-family:'Times New Roman', Times, serif;font-size: xx-large;" class="is-size-2"
+            class="is-size-2">Alumini Lecture</h2>
+        <button class="button is-small is-danger is-light" onclick="window.location.href='../'">Go Back</button>
+    </div>
+    <form action="" class="form" [formGroup]="itemForm">
+        <div class="field">
+            <label class="label">Class</label>
+            <div class="control">
+                <input class="input" matInput formControlName="class" type="topic" placeholder="Email input" value="">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Resource Person's Name</label>
+            <div class="control">
+                <input class="input" matInput formControlName="person" type="topic" placeholder="Email input" value="">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Affiliation</label>
+            <div class="control">
+                <input class="input" matInput formControlName="affiliate" type="topic" placeholder="Email input" value="">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Programme and Batch in CHRIST</label>
+            <div class="control">
+                <input class="input" matInput formControlName="programme" type="topic" placeholder="Email input" value="">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Date</label>
+            <div class="control">
+                <input matInput formControlName="date" class="input" type="date" placeholder="Email input" value="">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Time</label>
+            <div class="control">
+                <div class="select w-100">
+                    <select matInput formControlName="time" class="w-100">
+                        <option>Period 1: 09.00 to 10.00</option>
+                        <option>Period 2: 10.00 to 11.00</option>
+                        <option>Period 3: 11.00 to 12.00</option>
+                        <option>Period 4: 12.00 to 01.00</option>
+                        <option>Period 5: 02.00 to 03.00</option>
+                        <option>Period 6: 03.00 to 04.00</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="field is-grouped">
+        <div class="control">
+            <button class="button is-link" (click)="addData()">Submit</button>
+        </div>
+        <div class="control">
+            <button class="button is-link is-light" onclick="window.location.href='../'">Cancel</button>
+        </div>
+    </div>
+</div>

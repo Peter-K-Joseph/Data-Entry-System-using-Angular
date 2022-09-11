@@ -1,0 +1,105 @@
+<div class="container">
+    <h1>Alumini Data Modification</h1>
+    <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-icon-button (click)="modify(element.id, 1)">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+                    </button>
+                    <button mat-icon-button (click)="delete(element.id, 1)">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+                    </button>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="time">
+                <th mat-header-cell *matHeaderCellDef> Time </th>
+                <td mat-cell *matCellDef="let element"> {{element.time}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef> Date </th>
+                <td mat-cell *matCellDef="let element"> {{element.date}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="programme">
+                <th mat-header-cell *matHeaderCellDef> Programme </th>
+                <td mat-cell *matCellDef="let element"> {{element.programme}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="affiliate">
+                <th mat-header-cell *matHeaderCellDef> Affiliate </th>
+                <td mat-cell *matCellDef="let element"> {{element.affiliate}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="person">
+                <th mat-header-cell *matHeaderCellDef> Person </th>
+                <td mat-cell *matCellDef="let element"> {{element.person}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="class">
+                <th mat-header-cell *matHeaderCellDef> Class </th>
+                <td mat-cell *matCellDef="let element"> {{element.class}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+    <h1>Industry Data Modification</h1>
+    <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource_industry">
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-icon-button (click)="modify(element.id, 2)">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+                    </button>
+                    <button mat-icon-button (click)="delete(element.id, 2)">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+                    </button>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="class">
+                <th mat-header-cell *matHeaderCellDef> Class </th>
+                <td mat-cell *matCellDef="let element"> {{element.class}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef> Date </th>
+                <td mat-cell *matCellDef="let element"> {{element.date}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="course">
+                <th mat-header-cell *matHeaderCellDef> Course </th>
+                <td mat-cell *matCellDef="let element"> {{element.course}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="affiliate">
+                <th mat-header-cell *matHeaderCellDef> Affiliate </th>
+                <td mat-cell *matCellDef="let element"> {{element.affiliate}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="person">
+                <th mat-header-cell *matHeaderCellDef> Person </th>
+                <td mat-cell *matCellDef="let element"> {{element.person}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="topic">
+                <th mat-header-cell *matHeaderCellDef> Topic </th>
+                <td mat-cell *matCellDef="let element"> {{element.topic}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns_industry"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns_industry;"></tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+.container {
+    margin: 30px 0;
+  }
+  
+  .select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #485fc7;
+    right: 2.125em;
+    z-index: 4;
+  }
